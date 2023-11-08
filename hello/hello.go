@@ -10,12 +10,10 @@ import (
 func main(){
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
-
-	message, err := greetings.Hello("")
+	
+	message, err := greetings.Hello("Maggie")
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	//message := greetings.Hello("Maggie")
 	fmt.Println(message)
 }
